@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+   <head>
+      <title>Tableau dynamique</title>
+      <meta http-equiv="content-type" content="application/xhtml+xml;
+      charset=UTF-8"/>
+      <link rel="stylesheet" type="text/css" title="stylecc" href="exercice2.css" />
+      <script type="application/javascript" src="tableau.js"></script>
+      <script type="application/javascript" src="exercice2.js"></script>
+   </head>
+   <body>
+      <h1>Damier</h1>
+      <table>
+         <tr>
+            <td>
+               <label for="i1">Nombres de lignes</label>
+               <input id="i1" type="text" value="4"/>
+            </td>
+            <td>
+               <label for="i2">Nombres de colonnes</label>
+               <input id="i2" type="text" value="10"/>
+            </td>
+            <td>
+               <button type="button" onclick="initTable()">construire</button>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="i3">Choix de la couleur du text</label>
+               <input id="i3" type="text" value="rouge"/>
+            </td>
+            <td>
+               <label for="i4">Choix de la couleur de fond</label>
+               <input id="i4" type="text" value="marron"/>
+            </td>
+            <td>
+               <button type="button" onclick="colorTable()">Applique ces couleurs</button>
+            </td>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

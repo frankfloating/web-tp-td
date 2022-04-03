@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <title>Révisions XHTML</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <script type="application/javascript" src="/javascript/initialisation.js"></script>
+    <script type="application/javascript" src="/javascript/test.js"></script>
+    <script type="application/javascript" src="/javascript/dom.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          title="form style"
+          href="/css/styleform.css"/>
+
+  </head>
+  <body onload="initReadOnlyTextInput()">
+
+
+    <h1>Révisions XHTML </h1>
+    <form action="http://voca.univ-poitiers.fr/~subrenat/cours_web/traitement.php">
+      <fieldset id="f1">
+        <legend>Votre identité</legend>
+
+        <p>
+          <label for="in1">nom</label>
+          <input type="text" size="20" maxlength="30" name="in1" id="in1" value="votre nom"/>
+        </p>
+
+        <p>
+          <label for="in2">prénom</label>
+          <input type="text" size="20" maxlength="30" name="in2" id="in2" value="votre prénom"/>
+        </p>
+
+        <p>
+          <label for="in3">heure de connexion à la page </label>
+          <input type="text" size="40" name="in3" id="in3" readonly/>
+        </p>
+
+        <p>
+          <!-- rendre le champ ci-dessous caché : quel est le bon type ?-->
+          <input type="hidden" name="in4" id="in4"/>
+        </p>
+      </fieldset>
+
+      <fieldset id="f2">
+        <legend>Balises inline et block</legend>
+
+
+        <table>
+          <thead>
+            <tr>
+              <th> Balise</th>
+              <th> Inline</th>
+              <th> Block</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong> a </strong></td>
+              <td><input type="radio" name="r1" id="in5" value="Inline"/></td>
+              <td><input type="radio" name="r1" id="in6" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> acronym </strong></td>
+              <td><input type="radio" name="r2" id="in7" value="Inline"/></td>
+              <td><input type="radio" name="r2" id="in8" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> blockquote </strong></td>
+              <td><input type="radio" name="r3" id="in9" value="Inline"/></td>
+              <td><input type="radio" name="r3" id="in10" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> br </strong></td>
+              <td><input type="radio" name="r4" id="in11" value="Inline"/></td>
+              <td><input type="radio" name="r4" id="in12" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> div </strong></td>
+              <td><input type="radio" name="r5" id="in13" value="Inline"/></td>
+              <td><input type="radio" name="r5" id="in14" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> dl </strong></td>
+              <td><input type="radio" name="r6" id="in15" value="Inline"/></td>
+              <td><input type="radio" name="r6" id="in16" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> em </strong></td>
+              <td><input type="radio" name="r7" id="in17" value="Inline"/></td>
+              <td><input type="radio" name="r7" id="in18" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> h1, ..., h6 </strong></td>
+              <td><input type="radio" name="r8" id="in19" value="Inline"/></td>
+              <td><input type="radio" name="r8" id="in20" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> hr </strong></td>
+              <td><input type="radio" name="r9" id="in21" value="Inline"/></td>
+              <td><input type="radio" name="r9" id="in22" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> img </strong></td>
+              <td><input type="radio" name="r10" id="in23" value="Inline"/></td>
+              <td><input type="radio" name="r10" id="in24" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> ol </strong></td>
+              <td><input type="radio" name="r11" id="in25" value="Inline"/></td>
+              <td><input type="radio" name="r11" id="in26" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> p </strong></td>
+              <td><input type="radio" name="r12" id="in27" value="Inline"/></td>
+              <td><input type="radio" name="r12" id="in28" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> span </strong></td>
+              <td><input type="radio" name="r13" id="in29" value="Inline"/></td>
+              <td><input type="radio" name="r13" id="in30" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> strong </strong></td>
+              <td><input type="radio" name="r14" id="in31" value="Inline"/></td>
+              <td><input type="radio" name="r14" id="in32" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> sub </strong></td>
+              <td><input type="radio" name="r15" id="in33" value="Inline"/></td>
+              <td><input type="radio" name="r15" id="in34" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> sup </strong></td>
+              <td><input type="radio" name="r16" id="in35" value="Inline"/></td>
+              <td><input type="radio" name="r16" id="in36" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> table </strong></td>
+              <td><input type="radio" name="r17" id="in37" value="Inline"/></td>
+              <td><input type="radio" name="r17" id="in38" value="Block"/></td>
+            </tr>
+            <tr>
+              <td><strong> ul </strong></td>
+              <td><input type="radio" name="r18" id="in39" value="Inline"/></td>
+              <td><input type="radio" name="r19" id="in40" value="Block"/></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </fieldset>
+      <fieldset id="f3">
+        <legend> Que met-on après les balises suivantes ?</legend>
+
+
+        <ul>
+          <li>
+            <label for="s1"> &lt;ul&gt; &nbsp;:</label>
+            <select name="s1" id="s1">
+              <option value="choisir"> choisir</option>
+              <option value="<ol>"> &lt;ol&gt;</option>
+              <option value="<ul>"> &lt;ul&gt;</option>
+              <option value="<dl>"> &lt;dl&gt;</option>
+              <option value="<li>"> &lt;li&gt;</option>
+              <option value="<dt>"> &lt;dt&gt;</option>
+              <option value="<dd>"> &lt;dd&gt;</option>
+              <option value="<p>"> &lt;p&gt;</option>
+              <option value="<div>"> &lt;div&gt;</option>
+              <option value="</ol>"> &lt;/ol&gt;</option>
+              <option value="</ul>"> &lt;/ul&gt;</option>
+              <option value="</dl>"> &lt;/dl&gt;</option>
+              <option value="</li>"> &lt;/li&gt;</option>
+            </select>
+          </li>
+          <li>
+            <label for="s2"> &lt;ol&gt; &nbsp;:</label>
+            <select name="s2" id="s2">
+              <option value="choisir"> choisir</option>
+              <option value="<ol>"> &lt;ol&gt;</option>
+              <option value="<ul>"> &lt;ul&gt;</option>
+              <option value="<dl>"> &lt;dl&gt;</option>
+              <option value="<li>"> &lt;li&gt;</option>
+              <option value="<dt>"> &lt;dt&gt;</option>
+              <option value="<dd>"> &lt;dd&gt;</option>
+              <option value="<p>"> &lt;p&gt;</option>
+              <option value="<div>"> &lt;div&gt;</option>
+              <option value="</ol>"> &lt;/ol&gt;</option>
+              <option value="</ul>"> &lt;/ul&gt;</option>
+              <option value="</dl>"> &lt;/dl&gt;</option>
+              <option value="</li>"> &lt;/li&gt;</option>
+            </select>
+          </li>
+          <li>
+            <label for="s3"> &lt;dl&gt; &nbsp;:</label>
+            <select name="s3" id="s3">
+              <option value="choisir"> choisir</option>
+              <option value="<ol>"> &lt;ol&gt;</option>
+              <option value="<ul>"> &lt;ul&gt;</option>
+              <option value="<dl>"> &lt;dl&gt;</option>
+              <option value="<li>"> &lt;li&gt;</option>
+              <option value="<dt>"> &lt;dt&gt;</option>
+              <option value="<dd>"> &lt;dd&gt;</option>
+              <option value="<p>"> &lt;p&gt;</option>
+              <option value="<div>"> &lt;div&gt;</option>
+              <option value="</ol>"> &lt;/ol&gt;</option>
+              <option value="</ul>"> &lt;/ul&gt;</option>
+              <option value="</dl>"> &lt;/dl&gt;</option>
+              <option value="</li>"> &lt;/li&gt;</option>
+            </select>
+          </li>
+          <li>
+            <label for="s4"> &lt;/li&gt; &nbsp;:</label>
+            <select name="s4" id="s4" multiple>
+              <option value="choisir"> choisir</option>
+              <option value="<ol>"> &lt;ol&gt;</option>
+              <option value="<ul>"> &lt;ul&gt;</option>
+              <option value="<dl>"> &lt;dl&gt;</option>
+              <option value="<li>"> &lt;li&gt;</option>
+              <option value="<dt>"> &lt;dt&gt;</option>
+              <option value="<dd>"> &lt;dd&gt;</option>
+              <option value="<p>"> &lt;p&gt;</option>
+              <option value="<div>"> &lt;div&gt;</option>
+              <option value="</ol>"> &lt;/ol&gt;</option>
+              <option value="</ul>"> &lt;/ul&gt;</option>
+              <option value="</dl>"> &lt;/dl&gt;</option>
+              <option value="</li>"> &lt;/li&gt;</option>
+            </select>
+          </li>
+        </ul>
+
+      </fieldset>
+      <fieldset id="f4">
+        <legend> Pour chaque balise ci-dessous, cochez, parmi les attributs
+                 mentionnés, ceux qui sont obligatoires
+        </legend>
+        <ul>
+          <li id="li1">
+
+            <span>img&nbsp;:</span>
+            <ul>
+              <li><input type="checkbox" name="c1" id="c1" value="width"/>
+                <label for="c1">width</label>
+              </li>
+              <li>
+                <input type="checkbox" name="c1" id="c2" value="height"/>
+                <label for="c2">height</label>
+              </li>
+              <li><input type="checkbox" name="c1" id="c3" value="alt"/>
+                <label for="c3">alt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="c1" id="c4" value="src"/>
+                <label for="c4">src</label>
+              </li>
+              <li>
+                <input type="checkbox" name="c1" id="c5" value="title"/>
+                <label for="c5">title</label>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li id="li2">
+            <span>form&nbsp;:</span>
+            <ul>
+              <li>
+                <input type="checkbox" name="c2" id="c6" value="action"/>
+                <label for="c6">action</label>
+              </li>
+              <li>
+
+                <input type="checkbox" name="c2" id="c7" value="method"/>
+                <label for="c7">method</label>
+              </li>
+              <li>
+
+                <input type="checkbox" name="c2" id="c8" value="id"/>
+                <label for="c8">id</label>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li id="li3">
+            <span>textarea&nbsp;:</span>
+
+            <ul>
+              <li>
+                <input type="checkbox" name="c3" id="c9" value="title"/>
+                <label for="c9">title</label>
+              </li>
+              <li>
+
+                <input type="checkbox" name="c3" id="c10" value="rows"/>
+                <label for="c10">rows</label>
+              </li>
+              <li>
+
+                <input type="checkbox" name="c3" id="c11" value="cols"/>
+                <label for="c11">cols</label>
+              </li>
+              <li>
+
+                <input type="checkbox" name="c3" id="c12" value="id"/>
+                <label for="c12">id</label>
+              </li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+      </fieldset>
+
+
+      <fieldset id="f5">
+        <legend>Gestion du formulaire</legend>
+
+        <div>
+          <button type="reset" name="b1" id="b1"> Effacer</button>
+          <button type="button" name="b2" id="b2" onclick="applyAllTests()"> Vérifiers </button>
+          <button> Affiche les résultats</button>
+          <button type="button" name="b3" id="b3" onclick="mysubmit()"> Envoyer</button>
+          <button type="button" name="b4" id="b4" onclick="displayAnswers()">Afficher</button>
+        </div>
+
+      </fieldset>
+    </form>
+
+
+    <hr/>
+
+
+  </body>
+</html>

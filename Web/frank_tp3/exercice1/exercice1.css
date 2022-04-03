@@ -1,0 +1,97 @@
+/***********************************************/
+/* s�lection des titres de niveau 1            */
+/***********************************************/
+
+h1{
+	text-decoration : underline;
+}
+
+/***********************************************/
+/* s�lection des listes ordonn�es et           */
+/* non ordonn�es			       */				
+/***********************************************/
+
+
+ul,ol{
+	border : groove 2px red;
+	width : 50%;
+}
+
+
+/***********************************************/
+/* s�lection du dernier paragraphe             */
+/***********************************************/
+
+body>p{
+	color : white;
+	background-color : black;
+} 
+
+
+/***********************************************/
+/* s�lection de tous les �l�ments dont l'id    */
+/* commence par div1-	ou est �gal � div1     */
+/***********************************************/
+
+*[id|="div1"]{
+	border : solid 1px green;
+}
+
+/***********************************************/
+/* s�lection de texte faiblement mis en valeur */
+/* dans un paragraphe			       */
+/***********************************************/
+
+em{
+	color : rgb(220,220,220);
+}
+
+
+/***********************************************/
+/* s�lection de texte fortement mis en valeur  */
+/* dans le paragraphe	div1-intro	       */
+/***********************************************/
+
+strong{
+	color : rgb(220,220,0);
+}
+
+
+/***********************************************/
+/* s�lection des divisions situ�es juste apr�s */
+/* un titre h2 				       */
+/***********************************************/
+
+
+h2 div{
+	color :red;
+}
+
+
+/***********************************************/
+/* s�lection des items des listes ordonn�es    */
+/***********************************************/
+
+
+ol li{
+	color : green;
+}
+
+/***********************************************/
+/* s�lection des �l�ments juste apr�s un <hr/> */
+/***********************************************/
+
+hr+h1,p{
+	font-style : italic;
+}
+
+/***********************************************/
+/* s�lection des items des listes 	       */
+/* non ordonn�es incluses dans la div1	       */
+/***********************************************/
+
+
+div[id="div1"] li{
+	color : blue;
+}
+

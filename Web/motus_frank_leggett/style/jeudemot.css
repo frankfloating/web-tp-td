@@ -1,0 +1,81 @@
+/**
+S'applique au corps de la page HTML
+ */
+
+body{
+  background-color: lightsteelblue;
+}
+
+/**
+S'applique à tous les titres de niveau 1
+ */
+h1{
+  text-align: center;
+  color : brown;
+  text-transform: uppercase;
+}
+
+/**
+S'applique à tous les titres de niveau 2
+ */
+h2{
+  color:brown;
+  font-style : oblique;
+}
+
+/**
+Pour insérer du contenu avant et après les titres de niveau 1
+ */
+
+h1::before,h1::after{
+  content : "***";
+}
+
+
+/**
+S'applique au titre de niveau 2 premier enfant de l'élément d'identifiant result
+ */
+
+[id="result"]>h2:first-child{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+/**
+S'applique au titre de niveau 2 deuxième enfant de l'élément d'identifiant result
+ */
+
+[id="result"]>h2+h2{
+    display: none;
+}
+
+
+/**
+S'applique aux divisions situées juste après un titre de niveau 1
+ */
+h1+div{
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 4px;
+    text-align: justify;
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+}
+
+/**
+S'applique à la première lettre de chaque paragraphe directement inclus dans une
+division située juste après un titre de niveau 1
+ */
+h1+div p:first-letter{
+    font-size: 1.5em;
+}
+
+/**
+S'applique à tout paragraphe deuxième enfant d'une division située juste après
+un titre de niveau 1
+ */
+h1+div p+p{
+    font-style: italic;
+}

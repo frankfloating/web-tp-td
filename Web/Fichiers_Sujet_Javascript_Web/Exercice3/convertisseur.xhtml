@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8"/>
+
+    <title> Convertisseur </title>
+
+    <link rel="stylesheet" type="text/css" title="convertisseur"
+    media="screen" href="./styleconvertisseur.css"/>
+      <script type="application/javascript" src="/Exercice3/convertisseur.js"> </script>
+  </head>
+  <body onload="con()">
+
+    <h1> Convertisseur de températures </h1>
+
+    <table>
+      <thead>
+	<tr> <th colspan="2"> Fahrenheit </th> <th colspan="2"> Celsius</th></tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td rowspan="2"> <input id="i1" type="text" value="32" size="4"/> </td>
+	  <td colspan="2"> <button type="button" onclick="convertftoc()"> --&gt; </button></td>
+	  <td rowspan="2"><input id="i2" type="text" value="0" size="4"/> </td>
+	</tr>
+	<tr>
+	  <td colspan="2"> <button type="button" onclick="convertctof()"> &lt;-- </button></td>
+	</tr>
+      </tbody>
+    </table>
+  </body>
+</html>

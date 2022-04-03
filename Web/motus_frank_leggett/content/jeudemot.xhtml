@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <title>Devine le mot</title>
+    <link type="text/css" rel="stylesheet" media="screen"
+          title="defaultstyle" href="../style/jeudemot.css"/>
+    <link type="text/css" rel="stylesheet" media="screen"
+          title="defaultstyle" href="../style/jeudemot-table.css"/>
+    <link type="text/css" rel="stylesheet" media="screen"
+          title="defaultstyle" href="../style/jeudemot-config.css"/>
+  </head>
+  <body>
+    <h1> Devine le mot </h1>
+    <div>
+      <p>
+        Dans ce jeu, vous devez deviner un mot en un certain nombre d'essais. À
+        chaque tentative, les lettres bien placées apparaissent en vert, les
+        lettres appartenant au mot mais mal placées apparaissent en jaune.
+        Les mots autorisés sont les noms communs et les verbes éventuellement
+        conjugués.
+      </p>
+      <p>
+        Ceci est juste une page HTML statique montrant le résultat d'une partie.
+        Pour
+        pouvoir jouer, il faudra rendre tout ceci dynamique avec du
+        javascript... plus tard... peut-être...
+      </p>
+
+    </div>
+
+
+    <div id="configuration">
+      <h2> Configuration </h2>
+      <ul>
+        <li>
+          <span> Nombre de lettres du mots</span>
+          <span>
+           <input type="text" name="nbletters" readonly="readonly" size="2"
+                  maxlength="2" value="5"/>
+         </span>
+        </li>
+        <li>
+          <span> Nombre de tentatives autorisées</span>
+          <span>
+           <input type="text" name="nbtries" readonly="readonly" size="2"
+                  maxlength="2" value="6"/>
+         </span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="game">
+      <h2> Jeu</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <td>P</td>
+            <td class="intheword">R</td>
+            <td>I</td>
+            <td>S</td>
+            <td>E
+            </td>
+          </tr>
+          <tr>
+            <td class="here intheword">C</td>
+            <td>H</td>
+            <td>A</td>
+            <td>M
+            </td>
+            <td>
+              P
+            </td>
+          </tr>
+          <tr>
+            <td class="here intheword">C</td>
+            <td class="here intheword">O
+            </td>
+            <td class="intheword">T</td>
+            <td>O
+            </td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td class="here intheword">C</td>
+            <td class="here intheword">O
+            </td>
+            <td class="here intheword">U</td>
+            <td class="intheword">T
+            </td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td class="here intheword">C</td>
+            <td class="here intheword">O
+            </td>
+            <td class="here intheword">U</td>
+            <td class="here intheword">R
+            </td>
+            <td class="here intheword">T</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="result">
+      <h2> You Win ! </h2>
+      <h2> You Lose ! </h2>
+    </div>
+  </body>
+</html>

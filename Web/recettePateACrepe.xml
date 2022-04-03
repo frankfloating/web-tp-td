@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!DOCTYPE recipe SYSTEM "fullrecipe.dtd">
+
+<recipe>
+  <title> Pâte à  crêpes </title>
+  <author>
+    <lastname> Alayrangues </lastname>
+    <firstname> Sylvie </firstname>
+  </author>
+  <source  href="http://paradisdescuisiniers.fr">Mamie</source>
+  <ingredientlist  personnb="3">
+    <ingredient qty="250" unit="gram"> farine </ingredient>
+    <ingredient qty="2"   unit="unit"> oeufs </ingredient>
+    <ingredient qty="25"  unit="cl"> de lait </ingredient>
+    <ingredient qty="25"  unit="cl"> d&apos;eau </ingredient>
+    <ingredient qty="2"   unit="tablespoon"> huile </ingredient>
+    <ingredient qty="1" unit="pinch"> sel &lt;facultatif&gt; </ingredient>
+  </ingredientlist>
+  <utensillist>
+    <utensil qty="1"> louche </utensil>
+    <utensil qty="1"> cuillère en bois </utensil>
+    <utensil qty="1"> saladier </utensil>
+  </utensillist>
+  <making time="5 minutes">
+    3 étapes sont nécessaires :
+    <step> Mélanger la farine, les oeufs, puis ajouter petit à petit
+    le lait et l'eau </step>
+    <step> Bien mélanger pour ne pas avoir de grumeaux </step>
+    <step> Ajouter l'huile et le sel &lt;facultatif&gt; </step>
+  </making>
+  <image name="crepe1.jpg"/>
+  <image name="crepe2.jpg"/>
+</recipe>

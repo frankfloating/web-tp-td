@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe SYSTEM "fullrecipe.dtd">
+
+<recipe>
+    <title>madeleines</title>
+    <author>
+        <lastname>Leggett</lastname>
+        <firstname>Frank</firstname>
+    </author>
+    <source href="https://www.ricardocuisine.com/en/recipes/5394-lemon-madeleines">Ricardo</source>
+    <ingredientlist personnb="4">
+        <ingredient qty="18" unit="cl">farine tout usage</ingredient>
+        <ingredient qty="0,1" unit="cl">levure chimique</ingredient>
+        <ingredient qty="0,1" unit="cl">sel</ingredient>
+        <ingredient qty="200" unit="gram">oeuf</ingredient>
+        <ingredient qty="12,5" unit="cl">sucre</ingredient>
+        <ingredient qty="20" unit="gram">zeste citron</ingredient>
+        <ingredient qty="12,5" unit="cl">beurre fondu</ingredient>
+    </ingredientlist>
+    <utensillist>
+        <utensil qty="2">boles</utensil>
+        <utensil qty="1">batteur électrique</utensil>
+        <utensil qty="1">spatule plastique</utensil>
+        <utensil qty="1">moule à madeleine</utensil>
+    </utensillist>
+    <making time="1 heure">
+        <step>Dans un bole mélanger farine, levure chimique et sel</step>
+        <step>Dans un autre bole mélanger oeuf, sucre et zeste et battre avec batteur pour 5 minutes</step>
+        <step>Avec la spatule plier mélange liquide dans le mélange sec puis faire de même avec beurre</step>
+        <step>Couvrir et laisser reposer dans le frigo pour 30 minutes</step>
+        <step>remplir moule et cuire pour 10 à 12 minutes jusqu'à le sommet devient doré. Sortir du moule et laisser refroidir</step>
+    </making>
+    <baking temperature="200 degrès" time="10 à 12 minutes"/>
+    <image name="Homemade_French_madeleines.jpg"/>
+    <image name="110px-Coquille_Saint_Jacques_(Intérieur).jpg)"/>
+</recipe>

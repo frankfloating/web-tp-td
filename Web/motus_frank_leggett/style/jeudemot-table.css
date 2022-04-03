@@ -1,0 +1,51 @@
+/**
+S'applique à tout élément table
+ */
+
+table{
+  border-collapse: collapse;
+  margin : auto;
+}
+
+/**
+S'applique à tous les éléments table, tr et td
+ */
+table,tr,td{
+  border : 2px solid blueviolet;
+  background-color: lightgrey;
+}
+
+/**
+S'applique à tout élément td
+ */
+td{
+  height: 1.5em;
+  width : 1.5em;
+  text-align: center;
+}
+
+/**
+S'applique à tout élément de classe "intheword"
+ */
+
+[class~="intheword"]{
+  background-color: yellow;
+  font-weight: bolder;
+}
+
+/**
+S'applique à tout élément de classe "here"
+ */
+[class~="here"]{
+  background-color: greenyellow;
+}
+
+
+/****
+NB :
+l'ordre de déclaration des deux jeux de règles précédents est-il important ?
+Si oui pourquoi ?
+(évidemment vous pouvez tester pour voir ce qu'il en est et ainsi vérifier que
+votre compréhension est correcte)
+
+ */

@@ -1,0 +1,40 @@
+legend {
+    text-align: center;
+    font-size: large;
+    width: 1400px;
+    border: black solid;
+    background-color: yellow;
+}
+
+fieldset[id="f1"]{
+    background-color: darksalmon;
+}
+
+fieldset[id="f2"]{
+    background-color: aqua;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    border: blue solid;
+}
+
+table td {
+    border: black solid;
+}
+
+fieldset[id="f3"] {
+    background-color: antiquewhite;
+}
+
+fieldset[id="f4"] {
+    background-color: aquamarine;
+}
+
+fieldset[id="f5"] {
+    background-color: chartreuse;
+}
+

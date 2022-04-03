@@ -1,0 +1,8 @@
+
+<!DOCTYPE character SYSTEM "fangh.dtd">
+<character>
+	<name>Gorgounok</name>
+	<race>ogre</race>
+	<job>warrior</job>
+	<lp>
+		<health>50<health>

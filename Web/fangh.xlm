@@ -1,0 +1,24 @@
+<!DOCTYPE character SYSTEM "fangh.dtd">
+<character>
+	<name>Gorgounok</name>
+	<race>ogre</race>
+	<job>warrior</job>
+	<lp>
+		<health>50<health>
+		<resistance>11</resistance>
+	</lp>
+	<skills>
+		<experience>300</experience>
+		<cara>
+			<courage lvl="12"/>
+			<intelligence lvl="9"/>
+			<charisma lvl="9"/>
+			<agility lvl="10"/>
+			<strenght lvl="13"/>
+		</cara>
+		<competences>chercheur noises</competences>
+		<competences>penible</competences>
+		<competences>resemble a rien</competences>
+	</skills>
+</character>		
+		

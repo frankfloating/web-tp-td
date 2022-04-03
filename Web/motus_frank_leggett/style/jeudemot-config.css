@@ -1,0 +1,38 @@
+/**
+S'applique à toute liste non ordonnée directement incluse dans un élément
+d'identifiant "configuration"
+ */
+
+*[id="configuration"] ul{
+  list-style-type: none;
+}
+
+
+/**
+S'applique à tout élément de liste inclus dans un élément d'identifiant
+"configuration"
+ */
+*[id="configuration"] li{
+  display: table-row;
+  padding-right: 0px;
+}
+
+/**
+S'applique à tout span inclus dans un élément de liste lui-même inclus dans un
+élément d'identifiant "configuration"
+ */
+*[id="configuration"] li span{
+  display: table-cell;
+  padding-right:10px;
+}
+
+/**
+S'applique à tout input directement inclus dans le deuxième span inclus dans un
+élément de liste lui-même inclus dans un élément d'identifiant "configuration"
+ */
+
+*[id="configuration"] li span+span input{
+  width : 1em;
+}
+
+

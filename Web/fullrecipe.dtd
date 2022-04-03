@@ -1,0 +1,57 @@
+<!ELEMENT recipe (title,author+,source?,ingredientlist,utensillist,making,baking?,image*)>
+<!ATTLIST recipe
+	  level (easy|medium|hard) "easy"
+	  price (low|medium|expensive) "low" >
+
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT author (lastname, firstname+)>
+
+<!ELEMENT source (#PCDATA)>
+<!ATTLIST source
+	  href CDATA #IMPLIED>
+
+<!ELEMENT lastname (#PCDATA)>
+
+<!ELEMENT firstname (#PCDATA)>
+
+<!ELEMENT ingredient (#PCDATA)>
+<!ATTLIST ingredient
+	  qty CDATA #REQUIRED
+	  unit (l|dl|cl|kg|gram|unit|tablespoon|pinch) #REQUIRED>
+
+
+<!ELEMENT ingredientlist (ingredient+)>
+<!ATTLIST ingredientlist
+	  personnb CDATA #REQUIRED>
+
+<!ELEMENT utensil (#PCDATA)>
+<!ATTLIST utensil
+	  qty CDATA "1">
+
+<!ELEMENT utensillist (utensil+)>
+
+<!ELEMENT step (#PCDATA)>
+<!ATTLIST step
+	  time CDATA #IMPLIED>
+
+<!ELEMENT making (#PCDATA|step)*>
+<!ATTLIST making
+	  time CDATA #IMPLIED>
+
+<!ELEMENT baking EMPTY>
+<!ATTLIST baking
+	  time CDATA #REQUIRED
+	  temperature CDATA #REQUIRED>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+    name CDATA #REQUIRED>
+
+
+
+
+
+
+

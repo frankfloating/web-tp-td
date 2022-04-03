@@ -1,0 +1,50 @@
+<!ELEMENT bibliotheques ( livres+, sections+, mouvement-littéraire, auteurs+ )>
+        <!--faut mettre une ATTLIST ici pour bibliotheques, id CDATA #IMPLIED suffira-->
+<!--chaque element en dessous doit ê appelé dans un element au dessus-->
+<!ELEMENT sections EMPTY><!--section et livre se superpose, tu peut enlever section-->
+<!ATTLIST sections ( roman | poesie | peinture | scultures | nouvel | photos ) #REQUIRED><!--faut mettre des " avant et après (), comme "(___)"-->
+
+<!-- oeuvres et livres se supperpose, il faut choisir l'un ou l'autre qui doit être appelé dans bibliotheques-->
+<!ELEMENT oeuvres ()><!--EMPTY au lieu de (), () n'existe pas dans dtd-->
+<!ATTLIST oeuvres
+        nature #PCDATA #IMPLIED
+        parution #PCDATA #IMPLIED
+        titre #PCDATA #REQUIRED
+        bibiographie #PCDATA #IMPLIED>
+
+<!ELEMENT livres EMPTY><!--#PCDATA au lieu de EMPTY pour écrire le titre, tu peut l'enlever des attributs-->
+<!ATTLIST livre ( titre | parution | edition | couverture |)> <!-- " et mode manquant (mode: #REQUIRED, #IMPLIED ou #FIXED)-->
+
+<!--selon bibliotheque il faudrait section ici-->
+<!-- auteur devrait ê appelé dans livres-->
+<!ELEMENT auteurs EMPTY><!--faut mettre auteurs après mouv-litt car dtd a priorité d'appel que tu as declaré dans bibliotheque-->
+<!ATTLIST auteur ( birthday, firstname, lastname, biographie )><!--les attributs devrait ê des balises a part entiere avec #PCDATA-->
+
+        <!ELEMENT roman ()><!--tu as deja livre-->
+<!ATTLIST roman #FIXED>
+
+<!ELEMENT citation ()><!--faut que tu l'appel dans un autre element-->
+<!ATTLIST citation #PCDATA>
+
+<!ELEMENT naissance ()><!--tu as deja birthday-->
+<!ATTLIST naissance ( lieu | pays | ville | date ) #IMPLIED>
+
+<!ELEMENT parution ()><!--tu l'as deja dans livres-->
+<!ATTLIST parution #PCDATA
+        dates #PCDATA
+        edition #PCDATA>
+
+<!ELEMENT titres EMPTY><!--deja dans livres-->
+<!ATTLIST titres #PCDATA #REQUIRED>
+
+<!ELEMENT mouvement-littéraire EMPTY>
+<!ATTLIST mouvement-littéraire ( lumieres | surrealisme | existentialisme | realisme ) #REQUIRED  >
+
+<!--il faut un element image pour mettre des images avec alt et src comme attribut-->
+<!--pour les attributs, chaque element doit en avoir un, si tu sait pas quoi mettre, met id CDATA #IMPLIED-->
+<!ELEMENT bibliographie ()><!--pas besoin de biblio, pour image ca sera src et alt pour la biblio-->
+<!ATTLIST bibliographie
+        auteur
+        nom_artiste
+        oeuvres+
+        photo >

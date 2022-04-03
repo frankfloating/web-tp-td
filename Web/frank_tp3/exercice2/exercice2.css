@@ -1,0 +1,91 @@
+/***********************************************/
+/* s�lection des l�gendes des fieldset         */
+/***********************************************/
+
+legend{
+	font-style : italic;
+}
+
+/***********************************************/
+/* ajout de '/' avant et apr�s chaque l�gende */
+/***********************************************/
+
+legend::before,legend::after{
+	content : '/';
+}
+
+/***********************************************/
+/* s�lection du formulaire qui doit �tre envoy�*/
+/* � nobody@nowhere.fr			       */
+/***********************************************/
+
+
+form{
+	background-color : rgb(0,255,255);
+}
+
+
+/***********************************************/
+/* s�lection des balises input de type text    */
+/***********************************************/
+
+input[type="text"]{
+	background-color : rgb(220,220,220);
+}
+
+/***********************************************/
+/* s�lection de la premi�re option du select   */
+/***********************************************/
+
+option:first-child{
+	text-decoration : underline;
+}
+
+
+/***********************************************/
+/* s�lection de l'input d'identifiant 'p'      */
+/* lorsqu'elle a le focus	               */
+/***********************************************/
+
+input[id="p"]:focus{
+	background-color : yellow;
+}
+
+/***********************************************/
+/* s�lection d'une input "active"						   */
+/***********************************************/
+
+input:active{
+	background-color : red;
+}
+
+/***********************************************/
+/* s�lection du fieldset sur lequel passe la   */
+/* souris                       	       */
+/***********************************************/
+
+fieldset:hover{
+	background-color : rgb(220,220,220);
+	color : red;
+}
+
+/***********************************************/
+/* Tous les descendants d'un fieldset 	       */
+/* doivent avoir la m�me couleur d'�criture    */
+/* que celle d�finie pour le fieldset          */
+/***********************************************/
+
+fieldset fieldset{
+	color : inherit;
+}
+
+/***********************************************/
+/* La premi�re lettre du texte de chaque option*/
+/***********************************************/
+
+option::first-letter{
+	font-weight : bolder;
+	color : blue;
+	text-transform : uppercase;
+}
+

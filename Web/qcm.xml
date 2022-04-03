@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qcm SYSTEM "qcm.dtd">
+<qcm niveau="simplissime" jour="27" mois="1" an="2017">
+  <title> Un peu de savoir-vivre (?) </title>
+  <description>
+    Quelques mises en situation pour mettre à l'épreuve votre
+    savoir-vivre.
+    <illustration src="savoirvivre.jpg" alt="une image humoristique sur
+					     le savoir vivre"/>
+  </description>
+  <question id="partir">
+    <sujet>
+      Vous devez partir d'un cours avant la fin
+    </sujet>
+    <reponses>
+      <bonne>
+	Vous demandez au préalable l'autorisation à l'enseignant
+      </bonne>
+      <mauvaise>
+	Vous n'y allez pas du tout
+      </mauvaise>
+      <mauvaise>
+	Vous vous levez et vous partez sans rien dire, 
+      </mauvaise>
+      <mauvaise>
+	Vous vous levez et partez en chantant la marseillaise
+      </mauvaise>
+    </reponses>
+    <commentaire>
+      Cette remarque ne s'applique pas qu'aux enseignements évidemment.
+      Dans le cas présent, il est toujours possible de prévenir
+      l'enseignant oralement ou par email (cf question <refquestion
+      ref="email"/> pour se rappeler des écueils à éviter dans ce
+      dernier cas)
+    </commentaire>
+  </question>
+  <question id="email">
+    <sujet>
+      Vous posez une question ou adressez une requête par email à un
+      enseignant
+    </sujet>
+    <reponses>
+      <bonne>
+	Vous commencez et terminez votre email par des formules de
+	politesse  (comme bonjour et cordialement)
+      </bonne>
+      <bonne>
+	Vous faites attention à votre orthographe et à la formulation de
+	vos phrases
+      </bonne>
+      <mauvaise>
+	Vous utilisez votre adresse email personnelle
+	(whitebunny@jaune.fr) et vous ne signez pas votre
+	email
+      </mauvaise>
+      <mauvaise>
+	Vous utilisez l'impératif et exigez une réponse rapide 
+      </mauvaise>
+    </reponses>
+  </question>
+</qcm>

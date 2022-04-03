@@ -1,0 +1,122 @@
+﻿Exercice 1 a.
+
+Turing award 2016 : Tim Berners Lee
+Citation « For inventing the World Wide Web, the first web browser, and the fundamental protocols and algorithms allowing the Web to scale. »  
+C.V. excerpt from https://www.w3.org/People/Berners-Lee/
+Sir Tim Berners-Lee invented the World Wide Web in 1989. He is the Director of the World Wide Web Consortium (W3C), a Web standards organization founded in 1994 which develops interoperable technologies (specifications, guidelines, software, and tools) to lead the Web to its full potential. He is a Director of the World Wide Web Foundation which was launched in 2009 to coordinate efforts to further the potential of the Web to benefit humanity. A graduate of Oxford University, Sir Tim invented the Web while 
+at CERN, the European Particle Physics Laboratory, in 1989. He wrote the first web client and server in 1990. His specifications of URIs, HTTP and HTML were refined as Web technology spread. He is the 3Com Founders Professor of Engineering in the School of Engineering with a joint appointment in the Department of Electrical Engineering and Computer Science at the Laboratory for Computer Science and Artificial Intelligence (CSAIL) at the Massachusetts Institute of Technology (MIT) where he co-leads the Decentralized Information Group (DIG). He is also a Professor in the Computer Science Department at the University of Oxford, UK. He is President of and founded the Open Data Institute in London. In 2011 he was named to the Board of Trustees of the Ford Foundation, a globally oriented private foundation with the mission of advancing human welfare. He is President of London's Open Data Institute. In 2001 he became a Fellow of the Royal Society. He has been the recipient of several international awards including the Japan Prize, the Prince of Asturias Foundation Prize, the Millennium Technology Prize and Germany's Die 
+Quadriga award. In 2004 he was knighted by H.M. Queen Elizabeth and in 2007 he was awarded the Order of Merit. In 2009 he was elected a foreign associate of the National Academy of Sciences. He is the author of "Weaving the Web". On March 18 2013, Sir Tim, along with Vinton Cerf, Robert Kahn, Louis Pouzin and Marc Andreesen, was awarded the Queen Elizabeth Prize for Engineering for "ground-breaking innovation in engineering that has been of global benefit to humanity." Sir Tim has promoted open government data globally and spend time fighting for rights such as net neutrality, privacy and the openness of the Web. On 4 April 2017, Sir Tim was awarded the ACM A.M. Turing Prize for inventing the World Wide Web, the first web browser, and the fundamental protocols and algorithms allowing the Web to scale. The Turing Prize, called the "Nobel Prize of Computing" is considered one of the most prestigious awards in Computer Science.
+Tim Berners-Lee in a few dates
+    • Birth : 8 June, 1955
+    •  Education : Bachelor's degree in Physics Queen's College, Oxford, 1976,
+    • Latest Experiences : Professor at Oxford University in Computer Science (2016-Present). Secondary appointments as Professor at Southampton University (2004-present)
+    • Director & Founder of: The World Wide Web Consortium (1994-present) and World Wide Web      Foundation (2008-present)
+
+Exercice 1 b.
+    • titre pricipal : h1
+    • parties du texte : div
+    • titres des parties du texte : h2
+    • paragraphes : p
+    • blocs de citations : blockquote
+    • listes : ul 
+    • elements de la liste : li
+    • liens hypertextes : a
+    • en valeur : em
+    • dates : span
+    • citations : q
+    • acronymes : acronym
+
+Exercice 2
+
+a. 
+    1. incorrecte, deux obligatoire
+    2. correcte
+    3. incorrecte, id attribut
+    4. incorrecte, un seul head et un seul body
+b.
+    1. incorrecte, implied = facultatif et fixed = constante obligatoire
+    2. correcte
+    3. incorrecte, un et un seul
+    4. correcte, presence %i18n;
+        
+c.  impossible de repondre sans elements supplementaire
+
+d. oui, body peut contenir un element p au travers de %Block; puis %block; mais il est impossible de dire si body peut contenir du texte.
+e. 
+    • texte : au travers de %Inline; (#PCDATA)
+    • em : au travers de %Inline; puis %inline; et %phrase;
+    • a : au travers de %Inline; puis %inline;
+
+exercice 3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="fr" lang="fr">
+   <head>
+      <title>Un peu de savoir-vivre (?)</title>
+      <meta http-equiv="content-type" content="application/xhtml+xml;
+					       charset=UTF-8"/>
+   </head>
+   <body>
+   <h1> Un peu de savoir-vivre (?) </h1>
+   <p>
+      Quelques mises en situation pour mettre à l'épreuve votre
+      savoir-vivre.
+      <img src="savoirvivre.jpg" alt="une image humoristique sur
+					     le savoir vivre"/>
+   </p>
+   <div id="partir">
+      <h2>
+         Vous devez partir d'un cours avant la fin
+      </h2>
+      <ol>
+         <li class="bonne">
+            Vous demandez au préalable l'autorisation à l'enseignant
+         </li>
+         <li class="mauvaise">
+            Vous n'y allez pas du tout
+         </li>
+         <li class="mauvaise">
+            Vous vous levez et vous partez sans rien dire,
+         </li>
+         <li class="mauvaise">
+            Vous vous levez et partez en chantant la marseillaise
+         </li>
+      </ol>
+      <p>
+         Cette remarque ne s'applique pas qu'aux enseignements évidemment.
+         Dans le cas présent, il est toujours possible de prévenir
+         l'enseignant oralement ou par email (cf question <a href="email"/> pour se rappeler des écueils à éviter dans ce
+         dernier cas)
+      </p>
+   </div>
+   <div id="email">
+      <h2>
+         Vous posez une question ou adressez une requête par email à un
+         enseignant
+      </h2>
+      <ol>
+         <li class="bonne">
+            Vous commencez et terminez votre email par des formules de
+            politesse  (comme bonjour et cordialement)
+         </li>
+         <li class="bonne">
+            Vous faites attention à votre orthographe et à la formulation de
+            vos phrases
+         </li>
+         <li class="mauvaise">
+            Vous utilisez votre adresse email personnelle
+            (whitebunny@jaune.fr) et vous ne signez pas votre
+            email
+         </li>
+         <li class="mauvaise">
+            Vous utilisez l'impératif et exigez une réponse rapide
+         </li>
+      </ol>
+   </div>
+   </body>
+</html>
+
+
